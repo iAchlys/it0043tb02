@@ -1,0 +1,83 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50%;
+    line-height: 1.5;
+    color: #000;
+    background-image: url('hey.jpg');
+    margin: 200px;
+}
+
+img {
+    height: 120px;
+}
+
+h1 {
+    font-size: 9;
+    color: maroon;
+    font-size: 100px; text-align: center;
+    
+}
+
+h2 {
+    font-size: 8;
+    color: lightyellow;
+    font-size: 50px; text-align: center;
+}
+
+p {
+    font-family: Arial;
+    color: lightyellow;
+    font-size: 50px; text-align: center;
+   body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50%;
+    line-height: 1.5;
+    color: #000;
+    background-image: url('hey.jpg');
+    margin: 200px;
+}
+
+img {
+    height: 120px;
+}
+
+h1 {
+    font-size: 9;
+    color: maroon;
+    font-size: 100px; text-align: center;
+    text-align: italic;
+    
+}
+
+h2 {
+    font-size: 8;
+    color: lightyellow;
+    font-size: 50px; text-align: center;
+    text-align: italic;
+}
+}
+
+p {
+    font-family: Arial;
+    color: lightyellow;
+    font-size: 50px; text-align: center;
+    text-align: italic;
+}
+
+h1#hashtag {
+    color: red;
+    font-size: 3; text-align: center;
+}
+
+h1#hashtag {
+    color: red;
+    font-size: 3; text-align: center;
+}
+
+h3{
+color: rgb(110, 156, 110);
+font-size: 20px; text-align: right;
+text-align: italic;
+}
+
+
