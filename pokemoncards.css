@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container1,
+.container2 {
+    background-image: url(https://media.tenor.com/-qJy7-OJCfgAAAAM/y.gif);
+    max-width: 95vw;
+    margin: 0.5rem auto;
+    text-align: center;
+    background-size: cover;
+    border: whitesmoke;
+    border-style: groove;
+}
+
+.card {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4px;
+    display: inline-block;
+    width: 20%;
+    border-radius: 1rem;
+    margin: 0.5rem 1rem;
+    vertical-align: top;
+    border-width: 10px;
+    height: auto;
+    box-shadow: 10px 10px 10px black;
+}
+
+.image {
+    background-image: url("./cardsbg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+img {
+    filter: drop-shadow(10px 10px 5px #222);
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+
+}
+
+.bgimage {
+    max-width: 150px;
+    height: 150px;
+    background-image: url("bg.jpg");
+}
+
+h1 {
+    padding: 0.2rem 0.8rem;
+    text-shadow: 4px 4px 5px black;
+    color: white;
+
+}
+
+.type,
+.type1,
+.type2 {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.desc {
+    color: white;
+    text-align: justify;
+    margin: 0.2rem;
+    line-height: 1.2;
+    padding: 0 1.2rem;
+}
+
+.buttons {
+    margin-top: 0.8rem;
+    text-align: center;
+    padding: 0 0.8rem;
+    display: inline-block;
+}
+
+button {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    margin: 0.2rem 0.5rem;
+    color: white;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.add {
+    background-color: steelblue;
+}
+
+.release {
+    background-color: crimson;
+}
+
+.card:hover {
+    background-color: white;
+}
+
+.details {
+    padding: 0.8rem 0;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.palevioletred {
+    background-color: palevioletred;
+}
+
+.goldenrod {
+    background-color: goldenrod;
+}
+
+.brown {
+    background-color: #412122;
+
+}
+
+.psychic {
+    background-color: #EF4179;
+}
+
+.dark {
+    background-color: #624D4E;
+}
+
+.flying {
+    background-color: #81B9EF;
+}
+
+.aquablue {
+    background-color: #008b84;
+}
+
+.ice {
+    background-color: #3DCEF3;
+}
+
+.electric {
+    background-color: #FAC000;
+}
+
+.fire {
+    background-color: #E62829;
+
+}
+
+.fairy {
+    background-color: #EF70EF;
+
+}
+
+.water {
+    background-color: #2980EF;
+
+}
+
+.royalblue {
+    background-color: #0502a5;
+}
+
+.poison {
+    background-color: #9141CB;
+}
+
+.ghost {
+    background-color: #704170;
+}
+
+.ghost2 {
+    background-color: #350a35;
+}
+
+.steel {
+    background-color: #60A1B8;
+}
+
+.steel2 {
+    background-color: #115064;
+}
+
+.dragon {
+    background-color: #5060E1;
+}
