@@ -1,0 +1,230 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size: cover;
+    background: url(cardsbg\ \(1\).png);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid black;
+    transition: transform 0.3s, background-position 0.3s;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    transition: 1s;
+
+}
+
+.pokemon-name {
+    display: inline;
+    color: rgb(0, 0, 0);
+    padding: 2px 5px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+p {
+    display: none;
+    text-align: center;
+    align-self: center;
+    margin: 0px auto;
+    font-family: "VT323", monospace;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.pokeball {
+    display: none;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.pokemon:nth-child(1) {
+    background: url(charmander_bg.png) no-repeat center, #FF6347;
+}
+
+.pokemon:nth-child(1) .pokemon-name::after {
+    content: "Charmander";
+}
+
+.pokemon:nth-child(2) {
+    background: url(pikachu_bg.png) no-repeat center, #FFD700;
+}
+
+.pokemon:nth-child(2) .pokemon-name::after {
+    content: "Pikachu";
+}
+
+.pokemon:nth-child(3) {
+    background: url(mankey_bg.png) no-repeat center, #D2B48C;
+}
+
+.pokemon:nth-child(3) .pokemon-name::after {
+    content: "Mankey";
+}
+
+.pokemon:nth-child(4) {
+    background: url(mew_bg.png) no-repeat center, #FFB6C1;
+}
+
+.pokemon:nth-child(4) .pokemon-name::after {
+    content: "Mew";
+}
+
+.pokemon:nth-child(5) {
+    background: url(rattata_bg.png) no-repeat center, #A9A9A9;
+}
+
+.pokemon:nth-child(5) .pokemon-name::after {
+    content: "Rattata";
+}
+
+.pokemon:nth-child(6) {
+    background: url(haunter_bg.png) no-repeat center, #c3a1e4;
+}
+
+.pokemon:nth-child(6) .pokemon-name::after {
+    content: "Haunter";
+}
+
+.pokemon:nth-child(7) {
+    background: url(pidgey_bg.png) no-repeat center, #DEB887;
+}
+
+.pokemon:nth-child(7) .pokemon-name::after {
+    content: "Pidgey";
+}
+
+.pokemon:nth-child(8) {
+    background: url(bulbasaur_bg.png) no-repeat center, #98FB98;
+}
+
+.pokemon:nth-child(8) .pokemon-name::after {
+    content: "Bulbasaur";
+}
+
+.pokemon:nth-child(9) {
+    background: url(meowth_bg.png) no-repeat center, #F0E68C;
+}
+
+.pokemon:nth-child(9) .pokemon-name::after {
+    content: "Meowth";
+}
+
+.pokemon:nth-child(10) {
+    background: url(caterpie_bg.png) no-repeat center, #7FFF00;
+}
+
+.pokemon:nth-child(10) .pokemon-name::after {
+    content: "Caterpie";
+}
+
+.pokemon:nth-child(11) {
+    background: url(jigglypuff_bg.png) no-repeat center, #FF69B4;
+}
+
+.pokemon:nth-child(11) .pokemon-name::after {
+    content: "Jigglypuff";
+}
+
+.pokemon:nth-child(12) {
+    background: url(zubat_bg.png) no-repeat center, #4169E1;
+}
+
+.pokemon:nth-child(12) .pokemon-name::after {
+    content: "Zubat";
+}
+
+
+
+@media(max-width: 1000px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .pokemon {
+        flex-direction: row;
+        width: 80%;
+        height: 300px;
+    }
+
+    img {
+        height: 275px;
+        width: 275px;
+        margin: auto;
+    }
+
+    p {
+        display: inline;
+
+    }
+
+    .pokeball {
+        display: inline;
+      
+    }
+
+    .pokemon:hover {
+        transform: scale(1.1);
+        background-position: bottom;
+        background-image: url(https://images7.alphacoders.com/134/1348996.png);
+    }
+
+    .pokemon-name {
+        display: inline;
+    }
+
+    
+    }
+@media(max-width:650px) {
+
+    .pokeball {
+        display: none;
+    }
+
+    .pokemon{
+        flex-direction: column;
+    }
+
+    p{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .pokemon {
+        width: 90%;
+        height: 400px;
+    }
+
+
+
+    }
+        
+       
