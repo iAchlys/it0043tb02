@@ -5,6 +5,7 @@ body {
     background-color: #000;
     color: #fff;
     display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -36,6 +37,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e50914;
 }
 
 .hero {
@@ -56,6 +62,12 @@ nav ul li a {
     font-size: 1em;
     cursor: pointer;
     color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #d40813;
+    transform: scale(1.05);
 }
 
 section {
@@ -78,6 +90,11 @@ section h2 {
 
 .character-profile {
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.character-profile:hover {
+    transform: translateY(-5px);
 }
 
 .character-profile img {
@@ -85,6 +102,11 @@ section h2 {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.character-profile img:hover {
+    transform: scale(1.1);
 }
 
 .character-profile h3 {
@@ -98,10 +120,26 @@ footer {
     padding: 5px 10px;
 }
 
-.social-media a {
+footer .social-media a {
     color: #fff;
     margin: 0 5px;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #e50914;
+}
+
+
+@media (max-width: 1024px) {
+    .hero h2 {
+        font-size: 1.75em;
+    }
+    
+    .character-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -114,14 +152,31 @@ footer {
         padding: 30px 20px;
     }
     
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    
     .character-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    section h2 {
+        font-size: 1.75em;
+    }
+    
+    footer .social-media a {
+        display: block;
+        margin: 10px 0;
     }
 }
 
 @media (max-width: 480px) {
     .hero h2 {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
     
     .hero button {
@@ -132,4 +187,13 @@ footer {
     .character-grid {
         grid-template-columns: 1fr;
     }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 10px 5px;
+    }
 }
+
