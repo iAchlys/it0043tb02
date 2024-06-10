@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-family: 'Stranger Things Font', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.hero button {
+    background-color: #e50914;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #fff;
+}
+
+section {
+    padding: 10px;
+    text-align: center;
+    background-color: #111;
+    margin: 5px;
+}
+
+section h2 {
+    font-family: 'Stranger Things Font', sans-serif;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.character-profile {
+    text-align: center;
+}
+
+.character-profile img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.character-profile h3 {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero {
+        padding: 30px 20px;
+    }
+    
+    .character-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    
+    .hero button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .character-grid {
+        grid-template-columns: 1fr;
+    }
+}
