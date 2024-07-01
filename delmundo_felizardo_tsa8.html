@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Configurator</title>
+    <link rel="stylesheet" href="delmundo_felizardo_tsa8.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="controls">
+            <h1>Skyrim Flexbox Configurator</h1>
+            <button id="resetFlexbox">Reset Flexbox</button>
+            <div>
+                <label>Gap</label>
+                <input type="number" id="gap" value="0" min="0">
+            </div>
+            <div>
+                <label>Flex Direction</label>
+                <button class="flexDirection" data-direction="row">Row</button>
+                <button class="flexDirection" data-direction="column">Column</button>
+            </div>
+            <div>
+                <label>Justify Content</label>
+                <button class="justifyContent" data-justify="flex-start">Start</button>
+                <button class="justifyContent" data-justify="center">Center</button>
+                <button class="justifyContent" data-justify="flex-end">End</button>
+                <button class="justifyContent" data-justify="space-between">Space Between</button>
+                <button class="justifyContent" data-justify="space-around">Space Around</button>
+                <button class="justifyContent" data-justify="space-evenly">Space Evenly</button>
+            </div>
+            <div>
+                <label>Align Items</label>
+                <button class="alignItems" data-align="flex-start">Start</button>
+                <button class="alignItems" data-align="center">Center</button>
+                <button class="alignItems" data-align="flex-end">End</button>
+            </div>
+            <div>
+                <label>Flex Grow</label>
+                <button id="resetGrow">Reset</button>
+                <button id="growAll">Grow All</button>
+                <div>
+                    <label>Box 1</label>
+                    <input type="number" class="flexGrow" data-box="1" value="0" min="0">
+                </div>
+                <div>
+                    <label>Box 2</label>
+                    <input type="number" class="flexGrow" data-box="2" value="0" min="0">
+                </div>
+                <div>
+                    <label>Box 3</label>
+                    <input type="number" class="flexGrow" data-box="3" value="0" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+        </div>
+    </div>
+    <script src="delmundo_felizardo_tsa8.js"></script>
+</body>
+</html>
