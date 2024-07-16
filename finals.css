@@ -10,10 +10,10 @@ font-family: "poppins", sans-serif;
 }
 
 :root {
-  --bg-color: #000000;
-  --second-bg-color: #111111;
-  --text-color: rgb(255, 255, 255);
-  --main-color: rgb(223, 106, 106);
+  --bg-color: #5e503f;
+  --second-bg-color: #baa898;
+  --text-color: #0a0908;
+  --main-color: #fdfdfc;
 
 }
 
@@ -33,12 +33,13 @@ body{
   left: 0%;
   width: 100%;
   padding: 4rem 12% 4rem;
-  background: #080808;
+  background: var(--second-bg-color);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  
 }
 
 .logo{
@@ -117,7 +118,7 @@ li{
     top: 100px;
     gap: 0;
     flex-direction: column;
-    background-color:  rgb(26, 25, 25);
+    background-color:  var(--main-color);
     width: 40%;
     text-align: center;
     transition: 0.3s;
@@ -354,12 +355,13 @@ span{
  margin: 5rem 0;
 }
 .about{
-padding: 100px 15px;
+padding: 100px 15px 0 15px;
 background: var(--second-bg-color);
 }
 .about h2{
   margin-bottom: 5rem;
 }
+
 .timeline-items{
   max-width: 1200px;
   margin:  auto;
@@ -392,6 +394,39 @@ background: var(--second-bg-color);
 .timeline-item:nth-child(even){
   padding-left: calc(50% + 30px);
 }
+
+.timeline-row{
+  display: flex;
+}
+
+.timeline-frame{
+  width:50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 4rem;
+  padding-left: 3rem;
+}
+
+.me{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+
+.tc{
+  margin-left: 10rem;
+  
+  max-height: 30vh;
+}
+
 .timeline-dot{
   align-items: center;
   height: 21px;
@@ -409,6 +444,9 @@ background: var(--second-bg-color);
   font-weight: 800;
   color: white;
   margin: 6px 0 15px;  
+
+}
+.timeline-item-last{
 
 }
 
@@ -594,9 +632,7 @@ background: var(--second-bg-color);
   justify-content: center;
   flex-direction: column;
 }
-/* @media(max-width:768px){
-  display: grid: ;
-} */
+
 .projects .heading{
   margin-bottom: 5rem;
 }
@@ -649,7 +685,7 @@ box-shadow: 0 0 50px var(--main-color);
 }
 .contact h2{
   margin-bottom: 3rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .contact form{
   display: flex;
@@ -660,6 +696,7 @@ box-shadow: 0 0 50px var(--main-color);
   text-align: center;
 }
 .contact form .input-box{
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
