@@ -229,7 +229,7 @@ span{
 }
 .social-icons{
   width: fit-content;
- 
+  
 }
 
 .social-icons a:hover{
@@ -486,7 +486,7 @@ background: var(--second-bg-color);
   width: 50px;
 }
 .services{
-  background: var(--bg-color);
+  background: var(--second-bg-color);
   color: black;
 }
 .services h2{
@@ -623,7 +623,7 @@ background: var(--second-bg-color);
   margin: auto;
 }
 .projects{
-  background: var(--second-bg-color);
+  background-color: var(--second-bg-color);
 }
 .projects-box{
   background-size: cover;
@@ -631,6 +631,7 @@ background: var(--second-bg-color);
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: var(--second-bg-color);
 }
 
 .projects .heading{
@@ -803,6 +804,7 @@ box-shadow: 0 0 50px var(--main-color);
 }
 
 .services{
+  background-color: var(--bg-color);
   padding-bottom: 7rem;
 }
 .projects .wrapper{
