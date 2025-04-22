@@ -3,7 +3,7 @@
   }
   
   body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Patrick Hand', cursive;
     background: linear-gradient(to right, #fbc2eb, #a6c1ee);
     display: flex;
     flex-direction: column;
@@ -90,6 +90,13 @@
   #noBtn {
     position: absolute;
     transition: top 0.3s, left 0.3s;
+  }
+  
+  .response-message {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #fff;
+    text-shadow: 1px 1px #ff69b4;
   }
   
   @media (max-width: 600px) {
