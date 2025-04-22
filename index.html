@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi Katty?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hi there... Katty 💌</h1>
+
+    <div class="message-box" id="messageBox" onclick="showNextMessage()">
+      Click to see what I want to say...
+    </div>
+
+    <div class="buttons" id="finalChoice">
+      <h1>So, Can I at least try to pursue you? 💖</h1>
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmxpdDFhaW5nc3Zua2tpdDl1bXRzM2JxZm4ycnVnOWdzeWEyZjQ4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1syJZUCK8ey2KBem9n/giphy.gif" class="gif" alt="Black cat happy Friday" />
+      
+      <div class="button-group">
+        <button class="btn" onclick="alert('Yay!! I’m so happy! 😊💞')">Yes</button>
+        <button class="btn" id="noBtn" onclick="alert('Aww okay, maybe in another lifetime 😢')">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const messages = [
+      "click again?",
+      "so i kinda...",
+      "find you attractive...",
+      "but im too shy...",
+      "so i just made this code for you!",
+      "im okay with rejection.",
+      "so if you are going to reject me...",
+      "please do it with care ❤️",
+      "i hope i didn't bother you that much..."
+    ];
+
+    let index = 0;
+    const msgBox = document.getElementById('messageBox');
+
+    function showNextMessage() {
+      if (index < messages.length) {
+        msgBox.textContent = messages[index];
+        index++;
+      } else {
+        msgBox.style.display = 'none';
+        document.getElementById('finalChoice').style.display = 'flex';
+      }
+    }
+
+    const noBtn = document.getElementById('noBtn');
+    const containerEl = document.querySelector('.container');
+    let ranAway = false;
+
+    noBtn.addEventListener('mouseover', () => {
+      if (ranAway) return;
+      const containerRect = containerEl.getBoundingClientRect();
+      const maxX = containerRect.width - noBtn.offsetWidth;
+      const maxY = containerRect.height - noBtn.offsetHeight;
+
+      const randX = Math.floor(Math.random() * maxX);
+      const randY = Math.floor(Math.random() * maxY);
+
+      noBtn.style.left = `${randX}px`;
+      noBtn.style.top = `${randY}px`;
+      ranAway = true;
+    });
+  </script>
+</body>
+</html>
