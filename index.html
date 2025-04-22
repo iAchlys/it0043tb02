@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hi Katty?</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" />
   <link rel="stylesheet" href="stylesss.css" />
 </head>
 <body>
+
+
   <div class="container">
     <h1>Hi there... Katty 💌</h1>
 
@@ -19,9 +22,11 @@
       <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmxpdDFhaW5nc3Zua2tpdDl1bXRzM2JxZm4ycnVnOWdzeWEyZjQ4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1syJZUCK8ey2KBem9n/giphy.gif" class="gif" alt="Black cat happy Friday" />
       
       <div class="button-group">
-        <button class="btn" onclick="alert('Yay!! I’m so happy! 😊💞')">Yes</button>
-        <button class="btn" id="noBtn" onclick="alert('Aww okay, maybe in another lifetime 😢')">No</button>
+        <button class="btn" onclick="handleAnswer(true)">Yes</button>
+        <button class="btn" id="noBtn" onclick="handleAnswer(false)">No</button>
       </div>
+
+      <p id="responseMessage" class="response-message"></p>
     </div>
   </div>
 
@@ -68,6 +73,15 @@
       noBtn.style.top = `${randY}px`;
       ranAway = true;
     });
+
+    function handleAnswer(isYes) {
+      const response = document.getElementById('responseMessage');
+      if (isYes) {
+        response.textContent = "Yay!! I’m so happy! 😊💞";
+      } else {
+        response.textContent = "Aww okay, maybe in another lifetime 😢";
+      }
+    }
   </script>
 </body>
 </html>
