@@ -1,120 +1,124 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Patrick Hand', cursive;
-    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #ff69b4;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.message-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #ff69b4;
+  padding: 18px 25px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: fit-content;
+  max-width: 90%;
+}
+
+.message-box:hover {
+  background-color: #ffe6f2;
+}
+
+.gif {
+  width: 100px;
+  margin: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.btn {
+  background-color: #fff;
+  color: #ff69b4;
+  border: 2px solid #ff69b4;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: #ff69b4;
+  color: #fff;
+}
+
+/* No button fun movement */
+#noBtn {
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+#noBtn:hover {
+  transform: translateY(-120px) translateX(50px) rotate(-10deg);
+}
+
+.response-message {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 1px 1px #ff69b4;
+}
+
+@media (max-width: 600px) {
   h1 {
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px #ff69b4;
+    font-size: 1.5rem;
   }
-  
-  .container {
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    position: relative;
-  }
-  
+
   .message-box {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #ff69b4;
-    padding: 18px 25px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    margin: 20px auto;
-    cursor: pointer;
-    transition: background 0.3s;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: fit-content;
-    max-width: 90%;
-  }
-  
-  .message-box:hover {
-    background-color: #ffe6f2;
-  }
-  
-  .gif {
-    width: 100px;
-    margin: 10px;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-    position: relative;
-  }
-  
-  .btn {
-    background-color: #fff;
-    color: #ff69b4;
-    border: 2px solid #ff69b4;
-    padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
   }
-  
-  .btn:hover {
-    background-color: #ff69b4;
-    color: #fff;
+
+  .gif {
+    width: 80px;
   }
-  
-  #noBtn {
-    position: absolute;
-    transition: top 0.3s, left 0.3s;
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
-  
-  .response-message {
-    font-size: 1.1rem;
-    margin-top: 15px;
-    color: #fff;
-    text-shadow: 1px 1px #ff69b4;
-  }
-  
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    .message-box {
-      font-size: 1rem;
-    }
-  
-    .gif {
-      width: 80px;
-    }
-  
-    .btn {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-    }
-  }
-  
+}
